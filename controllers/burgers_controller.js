@@ -16,12 +16,13 @@ router.get("/", function(req, res) {
   });
 });
 
-router.put("/:id", function(req, res) {
-
+router.post("/update", function(req, res) {
+    console.log("suvess");
     console.log(req.body);
-    var condition = "id = " + req.params.id;
+    var condition = "id = " + req.body.id;
+    var devour=parseInt("1");
         burger.update({
-            devoured: req.body.devoured
+            devoured: devour
           }, condition, function() {
             res.redirect("/");
           });

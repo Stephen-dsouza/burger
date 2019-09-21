@@ -39,12 +39,10 @@ span {
 }
 
 #burger-submit {
-	margin-right: 700px;
+	margin-left: 50px;
 	margin-top: 50px;
-	float: right;
-	vertical-align: top;
+	
 }
-
 #devour-button {
 	position: relative;
 	bottom: -14px;
@@ -133,9 +131,9 @@ span {
 		width: 100%;
 	}
 	#burger-submit {
-		/* margin-right: 500px; */
+		margin-left: 50px;
 		margin-top: 50px;
-		vertical-align: top;
+		
 	}
 	
 	

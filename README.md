@@ -30,9 +30,9 @@ Main Page
 
 Devoured Burger
 
-![Main Page](./Public/assets/img/Devoured.jpg)
+![Devoured Page](./Public/assets/img/Devoured.jpg)
 
 Added Burger
 
-![Main Page](./Public/assets/img/Add.jpg)
+![Added Page](./Public/assets/img/Add.jpg)
 

@@ -16,5 +16,17 @@ router.get("/", function(req, res) {
   });
 });
 
+router.put("/:id", function(req, res) {
+
+    console.log(req.body);
+    var condition = "id = " + req.params.id;
+        burger.update({
+            devoured: req.body.devoured
+          }, condition, function() {
+            res.redirect("/");
+          });
+    
+});
+
 
 module.exports = router;

@@ -6,6 +6,7 @@
 <div class="main-container">
     <section id="available-hamburgers">
         <ul id="burger-list">
+          <h2>AVAILABLE BURGERS</h2>
             {{#each burger}}
             {{#unless this.devoured}}
             <li class="available-burger">
@@ -14,7 +15,7 @@
                     {{this.burger_name}}
                 </span>
                 <span id="devour-button">
-                    <input type="hidden" name="devoured" value="true">
+                    {{!-- <input type="hidden" name="devoured" value="true"> --}}
                     <button class="devour-button" type="submit">Devour it!</button>
                     </form>
                 </span>
@@ -23,3 +24,16 @@
             {{/each}}
         </ul>
     </section>
+    <section id="devoured-hamburgers">
+      <h2>DEVOURED BURGERS</h2>
+    <ul>
+      {{#each burger}}
+        {{#if this.devoured}}
+          <li class="devour-burger">
+            {{this.id}}
+            {{this.burger_name}}
+          </li>
+        {{/if}}
+      {{/each}}
+    </ul>
+  </section>

@@ -39,6 +39,8 @@ span {
 }
 
 #burger-submit {
+	margin-right: 700px;
+	margin-top: 50px;
 	float: right;
 	vertical-align: top;
 }
@@ -55,24 +57,9 @@ span {
 	left: 39%;
 }
 
-#new-burger {
-	clear: both;
-	margin-left: 24%;
-	width: 55%;
-}
 
-#new-burger-submit {
-	position: relative;
-	left: 40%;
-	background-color: #4e91fd;
-	color: white;
-}
 
-#new-burger-text {
-	width: 45%;
-	position: relative;
-	left: 25%;
-}
+
 
 
 
@@ -145,22 +132,13 @@ span {
 	#new-burger {
 		width: 100%;
 	}
-
-	#new-burger-submit {
-		position: relative;
-		left: 22%;
-		width: 40%;
-		height: 34px;
-		font-size: 24px;
+	#burger-submit {
+		/* margin-right: 500px; */
+		margin-top: 50px;
+		vertical-align: top;
 	}
-
-	#new-burger-text {
-		width: 90%;
-		left: 2%;
-		height: 75px;
-		font-size: 36px;
-	}
-
+	
+	
 	.burgers {
 		width: 90%;
 		font-size: 20px;

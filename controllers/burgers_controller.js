@@ -2,7 +2,7 @@ var express = require("express");
 
 var router = express.Router();
 
-// Import the model (cat.js) to use its database functions.
+// Import the model (burger.js) to use its database functions.
 var burger = require("../models/burger.js");
 
 // Create all our routes and set up logic within those routes where required.
@@ -11,14 +11,12 @@ router.get("/", function(req, res) {
     var hbsObject = {
     burger: data
     };
-    console.log(hbsObject);
     res.render("index", hbsObject);
   });
 });
-
-router.post("/update", function(req, res) {
-    console.log("suvess");
-    console.log(req.body);
+// the Ajax call made from burgerindex.js is then posted and orm update statement is run.
+// orm.js holds the template of the update statement and the statement for burgers is held in modals/burger.js
+router.post("/update", function(req, res) {;
     var condition = "id = " + req.body.id;
     var devour=parseInt("1");
         burger.update({
@@ -27,6 +25,20 @@ router.post("/update", function(req, res) {
             res.redirect("/");
           });
     
+});
+
+// the Ajax call made from burgerindex.js is then posted and orm insert statement is run.
+// orm.js holds the template of the insert statement and the statement for burgers is held in modals/burger.js
+router.post("/add", function(req, res) {
+  burger.create([
+    "burger_name"
+  ], [
+    req.body.burger_name
+  ], function() {
+    res.redirect("/");
+  });
+ 
+  
 });
 
 

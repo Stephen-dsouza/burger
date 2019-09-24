@@ -4,6 +4,7 @@ This app uses  Node.js, Express.js, MySQL,dotenv,Nodemon and Handlebars in creat
 Users can add burgers to be devoured.
 
 ## HOW TO USE
+# Using localhost MYSQL
 * Create the database schema using "schema.sql"
 * Add the data using data from"data.sql".
 
@@ -22,7 +23,8 @@ Users can add burgers to be devoured.
    * Now insert the entries you defined in `seeds.sql` by running the file: `source seeds.sql`.
 
    * Close out of the MySQL command line tool: `exit`.
-
+# Deplying to Heroku
+* You need to create an app in Heroku and use JAWSDB as the add on
    ## Images
 Main Page
 
